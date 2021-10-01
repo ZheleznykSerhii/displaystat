@@ -1,0 +1,15 @@
+Header {
+  grid-area: h;
+  background-color: rgb(128, 128, 128);
+}
+
+Header img {
+  width: 60px;
+  height: 60px;
+}
+
+.login {
+  color: antiquewhite;
+  text-decoration: none;
+  float: right;
+}

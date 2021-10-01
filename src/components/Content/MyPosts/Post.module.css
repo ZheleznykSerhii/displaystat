@@ -1,0 +1,16 @@
+.item {
+  color: greenyellow;
+  text-align: left;
+  padding: 15px;
+  background-color: blue;
+  margin-top: 40px;
+}
+
+.ava {
+  height: 50px;
+  width: 50px;
+}
+
+.Message {
+  padding-left: 15px;
+}

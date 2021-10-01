@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\..\\Desktop\\va code"
+	},
+	{
+		"path": "..\\..\\..\\Desktop\\va code\\верстка\\6й урок — CSS padding. CSS margin. CSS display"
+	},
+	{
+		"path": "..\\..\\..\\Desktop\\va code\\верстка\\8й урок Background\\домашка"
+	},
+	{
+		"path": "..\\..\\..\\Desktop\\va code\\верстка\\9й CSS псевдоклассы. Псевдокласс HOVER и другие\\домашка"
+	},
+	{
+		"path": "..\\..\\..\\Desktop\\домашка"
+	},
+	{
+		"path": "..\\.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "va code"
+  }
+}

@@ -1,0 +1,19 @@
+.Nav {
+  grid-area: n;
+  background-color: silver;
+  padding: 20px;
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+}
+
+.item a.activeLink {
+  color: gold;
+  text-decoration: none;
+}
+
+.friends {
+  display: flex;
+}

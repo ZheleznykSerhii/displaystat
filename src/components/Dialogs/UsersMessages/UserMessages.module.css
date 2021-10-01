@@ -1,0 +1,22 @@
+.content {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  background-color: cornsilk;
+  padding: 10px;
+}
+
+.item.active {
+  color: goldenrod;
+}
+
+.item {
+  padding: 5px;
+}
+
+.messages {
+  color: darkblue;
+}
+
+.messageItem {
+  padding: 5px;
+}

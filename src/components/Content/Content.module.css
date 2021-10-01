@@ -1,0 +1,8 @@
+.Content {
+  grid-area: c;
+  background-color: green;
+}
+
+.item {
+  color: rgb(255, 172, 47);
+}
