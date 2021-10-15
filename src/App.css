@@ -12,7 +12,7 @@
 
 .Header {
   grid-area: h;
-  background-color: gray;
+  background-color: rgb(1, 7, 0);
 }
 
 .Navigation {
@@ -22,5 +22,43 @@
 
 .Wrapper_content {
   grid-area: c;
-  background-color: green;
+  background-color: rgb(255, 255, 255);
+}
+
+table {
+  margin-top: 50px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
+  font-size: 14px;
+
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  font-weight: normal;
+  color: #039;
+  padding: 10px 8px;
+}
+td {
+  color: #669;
+  padding: 9px 8px;
+  transition: 0.3s linear;
+}
+tr:hover td {
+  color: #ff0000;
+}
+
+td {
+  color: #669;
+  padding: 9px 8px;
+  transition: 0.3s linear;
+}
+
+.clear50px {
+  height: 50px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }

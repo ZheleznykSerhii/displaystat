@@ -2,8 +2,8 @@ let UPDATE_KURS_DATE = 'UPDATE_KURS_DATE'
 let ADD_KURS_DATA = 'ADD_KURS_DATA'
 
 let initialState = {
-  KursData: 20201014,
-  KursByUser: 20200101,
+  KursData: '',
+  KursByUser: '',
 }
 
 const kursReducer = (state = initialState, action) => {
@@ -11,12 +11,13 @@ const kursReducer = (state = initialState, action) => {
     case UPDATE_KURS_DATE:
       return {
         ...state,
-        KursData: action.newData,
+        KursData: action.newData.replace(/\D+/g, ''),
       }
     case ADD_KURS_DATA:
       return {
         ...state,
         KursByUser: state.KursData,
+        KursData: '',
       }
 
     default:

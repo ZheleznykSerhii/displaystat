@@ -7,13 +7,12 @@ const instance = axios.create({
 })
 
 const ExchangeComponent = (props) => {
-  let messageRef = React.createRef()
+  let calenderRef = React.createRef()
 
-  const reportDate = props.KursByUser
-  console.log(reportDate)
+  let reportDate = props.KursByUser
 
   let dataChange = () => {
-    let data = messageRef.current.value
+    let data = calenderRef.current.value
     props.updateKursData(data)
   }
 
@@ -29,7 +28,6 @@ const ExchangeComponent = (props) => {
     })
   }, [reportDate])
 
-  console.log(exchRates)
   const keys = Object.values(exchRates)
   let a = []
   let b = []
@@ -58,16 +56,13 @@ const ExchangeComponent = (props) => {
 
   return (
     <div className="wrapper">
-      <span className="input">
-        <div>Оберіть дату</div>
-        <input
-          maxLength="8"
-          ref={messageRef}
-          value={props.KursData}
-          onChange={dataChange}
-        ></input>
-        <button onClick={addKursData}>Запросити курс на дату</button>
-      </span>
+      <div className="clear0px"></div>
+      <div className="flex">
+        <span className="input">
+          <button onClick={addKursData}>Запросити курс на дату</button>
+        </span>
+        <input type="date" ref={calenderRef} onChange={dataChange}></input>
+      </div>
       <table className="table">
         <thead>
           <h3 className="">Тільки важливі валюти</h3>
