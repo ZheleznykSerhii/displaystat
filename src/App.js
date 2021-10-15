@@ -19,17 +19,18 @@ const App = (props) => {
     <BrowserRouter>
       <div className="Wrapper">
         <HeaderContainer />
-        <div className="Navigation">
-          <Nav />
+        <div className="Navigation">{/*<Nav />*/}</div>
+        <div>
+          <ExchangeContainer />
         </div>
         <div className="Wrapper_content">
-          <Route path="/dialogs" render={() => <DialogsContainer />} />
-          <Route path="/Content/:userID?" render={() => <Content />} />
-          <Route path="/users" render={() => <UsersContainer />} />
-          <Route path="/music" render={() => <MusicContainer />} />
-          <Route path="/news" component={News} />
-          <Route path="/exchange" render={() => <ExchangeContainer />} />
-          <Route path="/login" render={() => <Login />} />
+          {/*<Route path="/dialogs" render={() => <DialogsContainer />} />*/}
+          {/*<Route path="/Content/:userID?" render={() => <Content />} />*/}
+          {/* <Route path="/users" render={() => <UsersContainer />} />*/}
+          {/* <Route path="/music" render={() => <MusicContainer />} />*/}
+          {/* <Route path="/news" component={News} />*/}
+          {/* <Route path="/exchange" render={() => <ExchangeContainer />} />*/}
+          {/* <Route path="/login" render={() => <Login />} />*/}
         </div>
       </div>
     </BrowserRouter>
